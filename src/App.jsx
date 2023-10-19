@@ -1,30 +1,59 @@
-import PropTypes from 'prop-types';
-import './App.css';
+import PropTypes from "prop-types";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <div className='total-container'>
-        <div className='sticky-container'>
-          <a className="navbar-brand" href="#"><img className='logo' alt='logo-eco-plagas' src='/public/logo2.png'></img></a>
+      <div className="total-container">
+        <div className="sticky-container">
+          <a className="navbar-brand" href="#">
+            <img
+              className="logo"
+              alt="logo-eco-plagas"
+              src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/public/logo2.png"
+            ></img>
+          </a>
           <nav className="navbar navbar-expand-lg bg-body-tertiary mt-5 pb-0">
             <div className="container-fluid ">
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
                 <span className="navbar-toggler-icon"></span>
               </button>
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav mb-2 mb-lg-0 p-2 ms-auto" >
+              <div
+                className="collapse navbar-collapse"
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav mb-2 mb-lg-0 p-2 ms-auto">
                   <li className="nav-item border-end">
-                    <a className="nav-link text-white active" aria-current="page" href="#">Residenciales</a>
+                    <a
+                      className="nav-link text-white active"
+                      aria-current="page"
+                      href="#"
+                    >
+                      Residenciales
+                    </a>
                   </li>
                   <li className="nav-item border-end">
-                    <a className="nav-link text-white" href="#">Comerciales</a>
+                    <a className="nav-link text-white" href="#">
+                      Comerciales
+                    </a>
                   </li>
                   <li className="nav-item border-end">
-                    <a className="nav-link text-white" href="#">Sobre Nosotros</a>
+                    <a className="nav-link text-white" href="#">
+                      Sobre Nosotros
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link text-white" href="#">Contáctanos</a>
+                    <a className="nav-link text-white" href="#">
+                      Contáctanos
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -32,117 +61,285 @@ function App() {
           </nav>
         </div>
         <main>
-          <div id="carouselExampleDark" className="carousel carousel-dark slide">
+          <div
+            id="carouselExampleDark"
+            className="carousel carousel-dark slide"
+          >
             <div className="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                className="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
             <div className="carousel-inner">
               <div className="carousel-item active" data-bs-interval="10000">
-                <img src="/img/cucarachas.jpg" className="d-block w-100 carrusel" alt="cucarachas" />
+                <img
+                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/cucarachas.jpg"
+                  className="d-block w-100 carrusel"
+                  alt="cucarachas"
+                />
                 <div className="carousel-caption d-none d-md-block b infoCarrusel">
-                  <h5 className='text-white carrouselText
-                    '>Problemas con cucarachas?</h5>
-                  <p className='text-white carrouselText
-                    '>Somos los primeros en Ecuador en ofrecer garantía del 100%</p>
+                  <h5
+                    className="text-white carrouselText
+                    "
+                  >
+                    Problemas con cucarachas?
+                  </h5>
+                  <p
+                    className="text-white carrouselText
+                    "
+                  >
+                    Somos los primeros en Ecuador en ofrecer garantía del 100%
+                  </p>
                 </div>
               </div>
               <div className="carousel-item" data-bs-interval="2000">
-                <img src="/img/ratas.png" className="d-block w-100 carrusel" alt="ratas" />
+                <img
+                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/ratas.png"
+                  className="d-block w-100 carrusel"
+                  alt="ratas"
+                />
                 <div className="carousel-caption d-none d-md-block b infoCarrusel">
-                  <h5 className='text-white carrouselText'>Roedores?</h5>
-                  <p className='text-white carrouselText'>¡Despídete de los roedores para siempre! Nuestro servicio de eliminación es rápido, seguro y eficaz. Recupera tu hogar o negocio librandote de las plagas!</p>
+                  <h5 className="text-white carrouselText">Roedores?</h5>
+                  <p className="text-white carrouselText">
+                    ¡Despídete de los roedores para siempre! Nuestro servicio de
+                    eliminación es rápido, seguro y eficaz. Recupera tu hogar o
+                    negocio librandote de las plagas!
+                  </p>
                 </div>
               </div>
               <div className="carousel-item">
-                <img src="/img/hormigas.webp" className="d-block w-100 carrusel" alt="hormigas" />
+                <img
+                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/hormigas.webp"
+                  className="d-block w-100 carrusel"
+                  alt="hormigas"
+                />
                 <div className="carousel-caption d-none d-md-block b infoCarrusel">
-                  <h5 className='text-white carrouselText
-                    '>Hormigas!!</h5>
-                  <p className='text-white carrouselText'>Liberate del asedio de las hormigas. nosotros, no solo las detenemos, las erradicamos por completo. Tu paz y comodidad son nuestra prioridad.</p>
+                  <h5
+                    className="text-white carrouselText
+                    "
+                  >
+                    Hormigas!!
+                  </h5>
+                  <p className="text-white carrouselText">
+                    Liberate del asedio de las hormigas. nosotros, no solo las
+                    detenemos, las erradicamos por completo. Tu paz y comodidad
+                    son nuestra prioridad.
+                  </p>
                 </div>
               </div>
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
               <span className="visually-hidden">Anterior</span>
             </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
               <span className="visually-hidden">Proximo</span>
             </button>
           </div>
           <div>
-            <img src="/img/divisorInvertido.png" className="divisor" alt="divisor"></img>
+            <img
+              src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisorInvertido.png"
+              className="divisor"
+              alt="divisor"
+            ></img>
             <h5 className="aval">Con el aval de:</h5>
-            <div className='iconos'>
-              <img src="/img/Imagen1.png" className="imgBox" alt="organismos-control-NPMA"></img>
-              <img src="/img/Imagen2.jpg" className="imgBox2" alt="organismos-control-WHO"></img>
-              <img src="/img/Imagen3.png" className="imgBox2" alt="organismos-control-EPA"></img>
-              <img src="/img/Imagen4.png" className="imgBox" alt="organismos-control-Ecuador-RCVS"></img>
-              <img src="/img/Imagen5.png" className="imgBox" alt="organismos-control-Ecuador-ministerio-de-ambiente"></img>
+            <div className="iconos">
+              <img
+                src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen1.png"
+                className="imgBox"
+                alt="organismos-control-NPMA"
+              ></img>
+              <img
+                src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen2.jpg"
+                className="imgBox2"
+                alt="organismos-control-WHO"
+              ></img>
+              <img
+                src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen3.png"
+                className="imgBox2"
+                alt="organismos-control-EPA"
+              ></img>
+              <img
+                src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen4.png"
+                className="imgBox"
+                alt="organismos-control-Ecuador-RCVS"
+              ></img>
+              <img
+                src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen5.png"
+                className="imgBox"
+                alt="organismos-control-Ecuador-ministerio-de-ambiente"
+              ></img>
             </div>
-            <img src="/img/divisor.png" className="divisor" alt="divisor"></img>
+            <img
+              src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisor.png"
+              className="divisor"
+              alt="divisor"
+            ></img>
           </div>
           <div className="contBot d-flex justify-content-evenly">
-            <div className='col w-50 d-flex tituloBoton'>
-              <h2 className="text-center text-white">ELIMINAMOS LA PLAGA CON UN TRATAMIENTO EFICAZ SIN UTILIZACIÓN DE PRODUCTOS TÓXICOS</h2>
-              <a className="btn btn-light d-block mx-auto mb-4 contacto" href="https://www.americanpest.es/contactanos/">Solicita inspección gratuita</a>
+            <div className="col w-50 d-flex tituloBoton">
+              <h2 className="text-center text-white">
+                ELIMINAMOS LA PLAGA CON UN TRATAMIENTO EFICAZ SIN UTILIZACIÓN DE
+                PRODUCTOS TÓXICOS
+              </h2>
+              <a
+                className="btn btn-light d-block mx-auto mb-4 contacto"
+                href="https://www.americanpest.es/contactanos/"
+              >
+                Solicita inspección gratuita
+              </a>
             </div>
             <div className="row w-50 iconosInfo">
               <div className="col-md-4">
                 <div className="text-center mb-4">
-                  <img className="img-fluid" src="https://www.americanpest.es/wp-content/uploads/2022/10/icono-salud-personas-y-mascotas.svg" alt="Icono salud personas y mascotas" />
+                  <img
+                    className="img-fluid"
+                    src="https://www.americanpest.es/wp-content/uploads/2022/10/icono-salud-personas-y-mascotas.svg"
+                    alt="Icono salud personas y mascotas"
+                  />
                 </div>
-                <h6 className="text-center text-white">Nos preocupamos por la salud de personas y mascotas</h6>
+                <h6 className="text-center text-white">
+                  Nos preocupamos por la salud de personas y mascotas
+                </h6>
               </div>
               <div className="col-md-4">
                 <div className="text-center mb-4">
-                  <img className="img-fluid" src="https://www.americanpest.es/wp-content/uploads/2022/10/icono-respeto-medio-ambiente.svg" alt="Icono respeto al medio ambiente" />
+                  <img
+                    className="img-fluid"
+                    src="https://www.americanpest.es/wp-content/uploads/2022/10/icono-respeto-medio-ambiente.svg"
+                    alt="Icono respeto al medio ambiente"
+                  />
                 </div>
-                <h6 className="text-center text-white">Nos preocupamos por el medio ambiente</h6>
+                <h6 className="text-center text-white">
+                  Nos preocupamos por el medio ambiente
+                </h6>
               </div>
             </div>
           </div>
-          <h4 className='servicios'>Servicios profesionales</h4>
-          <img src="/img/divisorInvertido.png" className="divisor" alt="divisor"></img>
-          <div className='servicesContainer'>
-            <Services imag="/img/servicios1.jpg" alt="ratas" title="Roedores" content="Exterminio total de Ratas, ratones y todo tipo de roedores." />
-            <Services imag="/img/servicios2.jpg" alt="cucarachas" title="Cucarachas" content="Exterminio total de cucarachas en hogares, hoteles, negocios de alimentos y comercios." />
-            <Services imag="/img/servicios3.jpg" alt="hormigas" title="Hormigas" content="Eficiencia y seguridad en eliminación de hormigas y todo su rastro." />
-            <Services imag="/img/servicios4.jpg" alt="voladores" title="Insectos voladores" content="Libérate de los molestos y contaminantes insectos voladores." />
-            <Services imag="/img/servicios5.jpg" alt="desinfeccion" title="Desinfección de ambientes" content="Para un espacio seguro y saludable solicita nuestros servicios profesionales." />
+          <h4 className="servicios">Servicios profesionales</h4>
+          <img
+            src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisorInvertido.png"
+            className="divisor"
+            alt="divisor"
+          ></img>
+          <div className="servicesContainer">
+            <Services
+              imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios1.jpg"
+              alt="ratas"
+              title="Roedores"
+              content="Exterminio total de Ratas, ratones y todo tipo de roedores."
+            />
+            <Services
+              imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios2.jpg"
+              alt="cucarachas"
+              title="Cucarachas"
+              content="Exterminio total de cucarachas en hogares, hoteles, negocios de alimentos y comercios."
+            />
+            <Services
+              imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios3.jpg"
+              alt="hormigas"
+              title="Hormigas"
+              content="Eficiencia y seguridad en eliminación de hormigas y todo su rastro."
+            />
+            <Services
+              imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios4.jpg"
+              alt="voladores"
+              title="Insectos voladores"
+              content="Libérate de los molestos y contaminantes insectos voladores."
+            />
+            <Services
+              imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios5.jpg"
+              alt="desinfeccion"
+              title="Desinfección de ambientes"
+              content="Para un espacio seguro y saludable solicita nuestros servicios profesionales."
+            />
           </div>
-          <img src="/img/divisor.png" className="divisor" alt="divisor"></img>
+          <img
+            src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisor.png"
+            className="divisor"
+            alt="divisor"
+          ></img>
           <div className="card text-center">
-            <div className="card-header">
-            </div>
+            <div className="card-header"></div>
             <div className="card-body">
               <h5 className="card-title">Satisfacción garantizada</h5>
-              <p className="card-text">Ofrecemos los productos líderes en Latinoamérica, y un equipo altamente capacitado para superar tus expectativas. Garantizamos total satisfacción en cada servicio. <br /> Tu confianza es nuestra mayor motivación.</p>
-              <a href="#" className="btn boto">Contáctanos</a>
+              <p className="card-text">
+                Ofrecemos los productos líderes en Latinoamérica, y un equipo
+                altamente capacitado para superar tus expectativas. Garantizamos
+                total satisfacción en cada servicio. <br /> Tu confianza es
+                nuestra mayor motivación.
+              </p>
+              <a href="#" className="btn boto">
+                Contáctanos
+              </a>
             </div>
-            <div className="card-footer text-body-secondary">
-            </div>
+            <div className="card-footer text-body-secondary"></div>
           </div>
         </main>
-        <div className='footer-container'>
-          <img src="/img/logoEcoPlagasNegro.png" alt='logo-eco-plagas-fondo-negro' className="logoFooter" />
+        <div className="footer-container">
+          <img
+            src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/logoEcoPlagasNegro.png"
+            alt="logo-eco-plagas-fondo-negro"
+            className="logoFooter"
+          />
           <footer className="footer-distributed">
             <div className="footer-left">
               <p className="footer-links">
-                <a className='link-1 elementosFooter' href="#">Residenciales</a>
-                <a href="#" className='elementosFooter'>Comerciales</a>
-                <a href="#" className='elementosFooter'>Sobre Nosotros</a>
-                <a href="#" className='elementosFooter'>Contáctanos</a>
+                <a className="link-1 elementosFooter" href="#">
+                  Residenciales
+                </a>
+                <a href="#" className="elementosFooter">
+                  Comerciales
+                </a>
+                <a href="#" className="elementosFooter">
+                  Sobre Nosotros
+                </a>
+                <a href="#" className="elementosFooter">
+                  Contáctanos
+                </a>
               </p>
               <p className="footer-company-name">Eco Plagas © 2023</p>
             </div>
             <div className="footer-center">
               <div>
                 <i className="fa fa-map-marker"></i>
-                <p><span>Diego García S8-61 y Av. Alpahuasi</span> Quito, Ecuador</p>
+                <p>
+                  <span>Diego García S8-61 y Av. Alpahuasi</span> Quito, Ecuador
+                </p>
               </div>
               <div>
                 <i className="fa fa-phone"></i>
@@ -150,15 +347,37 @@ function App() {
               </div>
               <div>
                 <i className="fa fa-envelope"></i>
-                <p><a href="mailto:info@eco-plagas.net">support@ecoplagas-ec.com</a></p>
+                <p>
+                  <a href="mailto:info@eco-plagas.net">
+                    support@ecoplagas-ec.com
+                  </a>
+                </p>
               </div>
             </div>
             <div className="footer-right">
               <div className="footer-icons">
-                <a href="#"><i className="fa fa-facebook"><img className='face' src="/img/iconoFacebook.png" /></i></a>
-                <a href="#"><i className="fa fa-twitter"></i></a>
-                <a href="#"><i className="fa fa-linkedin"></i></a>
-                <a href="#"><i className="fa fa-github"><img className='face' src="/img/iconoGitHub.svg" /></i></a>
+                <a href="#">
+                  <i className="fa fa-facebook">
+                    <img
+                      className="face"
+                      src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/iconoFacebook.png"
+                    />
+                  </i>
+                </a>
+                <a href="#">
+                  <i className="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i className="fa fa-linkedin"></i>
+                </a>
+                <a href="#">
+                  <i className="fa fa-github">
+                    <img
+                      className="face"
+                      src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/iconoFacebook.png"
+                    />
+                  </i>
+                </a>
               </div>
             </div>
           </footer>
@@ -170,13 +389,11 @@ function App() {
 
 export default App;
 
-
-
 function Services({ imag, alt, title, content }) {
   return (
     <>
       <div className="caption-style-4">
-        <div className='li'>
+        <div className="li">
           <img src={imag} alt={alt} />
           <div className="caption">
             <div className="blur"></div>
@@ -188,10 +405,10 @@ function Services({ imag, alt, title, content }) {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export { Services }
+export { Services };
 
 Services.propTypes = {
   imag: PropTypes.string.isRequired,
