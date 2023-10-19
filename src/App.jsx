@@ -13,303 +13,276 @@ function App() {
               src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/public/logo2.png"
             ></img>
           </a>
-          <nav className="navbar navbar-expand-lg bg-body-tertiary mt-5 pb-0">
-            <div className="container-fluid ">
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div
-                className="collapse navbar-collapse"
-                id="navbarSupportedContent"
-              >
-                <ul className="navbar-nav mb-2 mb-lg-0 p-2 ms-auto">
-                  <li className="nav-item border-end">
-                    <a
-                      className="nav-link text-white active"
-                      aria-current="page"
-                      href="#"
-                    >
-                      Residenciales
-                    </a>
-                  </li>
-                  <li className="nav-item border-end">
-                    <a className="nav-link text-white" href="#">
-                      Comerciales
-                    </a>
-                  </li>
-                  <li className="nav-item border-end">
-                    <a className="nav-link text-white" href="#">
-                      Sobre Nosotros
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-white" href="#">
-                      Contáctanos
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          <nav id="cont-header" className="navbar-fixed">
+            <div id="nav-text-container">
+              <a href="#" className="nav-text">
+                {" "}
+                Residenciales
+              </a>
+              <a href="#" className="nav-text">
+                Comerciales
+              </a>
+              <a href="#" className="nav-text">
+                Sobre Nosotros
+              </a>
+              <a href="#" className="nav-text">
+                Contáctanos
+              </a>
             </div>
           </nav>
         </div>
-        <main>
-          <div
-            id="carouselExampleDark"
-            className="carousel carousel-dark slide"
-          >
-            <div className="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleDark"
-                data-bs-slide-to="0"
-                className="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleDark"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleDark"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active" data-bs-interval="10000">
-                <img
-                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/cucarachas.jpg"
-                  className="d-block w-100 carrusel"
-                  alt="cucarachas"
-                />
-                <div className="carousel-caption d-none d-md-block b infoCarrusel">
-                  <h5
-                    className="text-white carrouselText
-                    "
-                  >
-                    Problemas con cucarachas?
-                  </h5>
-                  <p
-                    className="text-white carrouselText
-                    "
-                  >
-                    Somos los primeros en Ecuador en ofrecer garantía del 100%
-                  </p>
-                </div>
-              </div>
-              <div className="carousel-item" data-bs-interval="2000">
-                <img
-                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/ratas.png"
-                  className="d-block w-100 carrusel"
-                  alt="ratas"
-                />
-                <div className="carousel-caption d-none d-md-block b infoCarrusel">
-                  <h5 className="text-white carrouselText">Roedores?</h5>
-                  <p className="text-white carrouselText">
-                    ¡Despídete de los roedores para siempre! Nuestro servicio de
-                    eliminación es rápido, seguro y eficaz. Recupera tu hogar o
-                    negocio librandote de las plagas!
-                  </p>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/hormigas.webp"
-                  className="d-block w-100 carrusel"
-                  alt="hormigas"
-                />
-                <div className="carousel-caption d-none d-md-block b infoCarrusel">
-                  <h5
-                    className="text-white carrouselText
-                    "
-                  >
-                    Hormigas!!
-                  </h5>
-                  <p className="text-white carrouselText">
-                    Liberate del asedio de las hormigas. nosotros, no solo las
-                    detenemos, las erradicamos por completo. Tu paz y comodidad
-                    son nuestra prioridad.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide="prev"
+        <div className="border-total-container">
+          <main>
+            <div
+              id="carouselExampleDark"
+              className="carousel carousel-dark slide"
             >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Anterior</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Proximo</span>
-            </button>
-          </div>
-          <div>
+              <div className="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="0"
+                  className="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div className="carousel-inner">
+                <div className="carousel-item active" data-bs-interval="10000">
+                  <img
+                    src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/cucarachas.jpg"
+                    className="d-block w-100 carrusel"
+                    alt="cucarachas"
+                  />
+                  <div className="carousel-caption d-none d-md-block b infoCarrusel">
+                    <h5
+                      className="text-white carrouselText
+                    "
+                    >
+                      Problemas con cucarachas?
+                    </h5>
+                    <p
+                      className="text-white carrouselText
+                    "
+                    >
+                      Somos los primeros en Ecuador en ofrecer garantía del 100%
+                    </p>
+                  </div>
+                </div>
+                <div className="carousel-item" data-bs-interval="2000">
+                  <img
+                    src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/ratas.png"
+                    className="d-block w-100 carrusel"
+                    alt="ratas"
+                  />
+                  <div className="carousel-caption d-none d-md-block b infoCarrusel">
+                    <h5 className="text-white carrouselText">Roedores?</h5>
+                    <p className="text-white carrouselText">
+                      ¡Despídete de los roedores para siempre! Nuestro servicio
+                      de eliminación es rápido, seguro y eficaz. Recupera tu
+                      hogar o negocio librandote de las plagas!
+                    </p>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/hormigas.webp"
+                    className="d-block w-100 carrusel"
+                    alt="hormigas"
+                  />
+                  <div className="carousel-caption d-none d-md-block b infoCarrusel">
+                    <h5
+                      className="text-white carrouselText
+                    "
+                    >
+                      Hormigas!!
+                    </h5>
+                    <p className="text-white carrouselText">
+                      Liberate del asedio de las hormigas. nosotros, no solo las
+                      detenemos, las erradicamos por completo. Tu paz y
+                      comodidad son nuestra prioridad.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Anterior</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Proximo</span>
+              </button>
+            </div>
+            <div>
+              <img
+                src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisorInvertido.png"
+                className="divisor"
+                alt="divisor"
+              ></img>
+              <h5 className="aval">Con el aval de:</h5>
+              <div className="iconos">
+                <img
+                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen1.png"
+                  className="imgBox"
+                  alt="organismos-control-NPMA"
+                ></img>
+                <img
+                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen2.jpg"
+                  className="imgBox2"
+                  alt="organismos-control-WHO"
+                ></img>
+                <img
+                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen3.png"
+                  className="imgBox2"
+                  alt="organismos-control-EPA"
+                ></img>
+                <img
+                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen4.png"
+                  className="imgBox"
+                  alt="organismos-control-Ecuador-RCVS"
+                ></img>
+                <img
+                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen5.png"
+                  className="imgBox"
+                  alt="organismos-control-Ecuador-ministerio-de-ambiente"
+                ></img>
+              </div>
+              <img
+                src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisor.png"
+                className="divisor"
+                alt="divisor"
+              ></img>
+            </div>
+            <div className="contBot d-flex justify-content-evenly">
+              <div className="col w-50 d-flex tituloBoton">
+                <h2 className="text-center text-white">
+                  ELIMINAMOS LA PLAGA CON UN TRATAMIENTO EFICAZ SIN UTILIZACIÓN
+                  DE PRODUCTOS TÓXICOS
+                </h2>
+                <a
+                  className="btn btn-light d-block mx-auto mb-4 contacto"
+                  href="https://www.americanpest.es/contactanos/"
+                >
+                  Solicita inspección gratuita
+                </a>
+              </div>
+              <div className="row w-50 iconosInfo">
+                <div className="col-md-4">
+                  <div className="text-center mb-4">
+                    <img
+                      className="img-fluid"
+                      src="https://www.americanpest.es/wp-content/uploads/2022/10/icono-salud-personas-y-mascotas.svg"
+                      alt="Icono salud personas y mascotas"
+                    />
+                  </div>
+                  <h6 className="text-center text-white">
+                    Nos preocupamos por la salud de personas y mascotas
+                  </h6>
+                </div>
+                <div className="col-md-4">
+                  <div className="text-center mb-4">
+                    <img
+                      className="img-fluid"
+                      src="https://www.americanpest.es/wp-content/uploads/2022/10/icono-respeto-medio-ambiente.svg"
+                      alt="Icono respeto al medio ambiente"
+                    />
+                  </div>
+                  <h6 className="text-center text-white">
+                    Nos preocupamos por el medio ambiente
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <h4 className="servicios">Servicios profesionales</h4>
             <img
               src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisorInvertido.png"
               className="divisor"
               alt="divisor"
             ></img>
-            <h5 className="aval">Con el aval de:</h5>
-            <div className="iconos">
-              <img
-                src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen1.png"
-                className="imgBox"
-                alt="organismos-control-NPMA"
-              ></img>
-              <img
-                src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen2.jpg"
-                className="imgBox2"
-                alt="organismos-control-WHO"
-              ></img>
-              <img
-                src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen3.png"
-                className="imgBox2"
-                alt="organismos-control-EPA"
-              ></img>
-              <img
-                src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen4.png"
-                className="imgBox"
-                alt="organismos-control-Ecuador-RCVS"
-              ></img>
-              <img
-                src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen5.png"
-                className="imgBox"
-                alt="organismos-control-Ecuador-ministerio-de-ambiente"
-              ></img>
+            <div className="servicesContainer">
+              <Services
+                imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios1.jpg"
+                alt="ratas"
+                title="Roedores"
+                content="Exterminio total de Ratas, ratones y todo tipo de roedores."
+              />
+              <Services
+                imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios2.jpg"
+                alt="cucarachas"
+                title="Cucarachas"
+                content="Exterminio total de cucarachas en hogares, hoteles, negocios de alimentos y comercios."
+              />
+              <Services
+                imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios3.jpg"
+                alt="hormigas"
+                title="Hormigas"
+                content="Eficiencia y seguridad en eliminación de hormigas y todo su rastro."
+              />
+              <Services
+                imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios4.jpg"
+                alt="voladores"
+                title="Insectos voladores"
+                content="Libérate de los molestos y contaminantes insectos voladores."
+              />
+              <Services
+                imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios5.jpg"
+                alt="desinfeccion"
+                title="Desinfección de ambientes"
+                content="Para un espacio seguro y saludable solicita nuestros servicios profesionales."
+              />
             </div>
             <img
               src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisor.png"
               className="divisor"
               alt="divisor"
             ></img>
-          </div>
-          <div className="contBot d-flex justify-content-evenly">
-            <div className="col w-50 d-flex tituloBoton">
-              <h2 className="text-center text-white">
-                ELIMINAMOS LA PLAGA CON UN TRATAMIENTO EFICAZ SIN UTILIZACIÓN DE
-                PRODUCTOS TÓXICOS
-              </h2>
-              <a
-                className="btn btn-light d-block mx-auto mb-4 contacto"
-                href="https://www.americanpest.es/contactanos/"
-              >
-                Solicita inspección gratuita
-              </a>
-            </div>
-            <div className="row w-50 iconosInfo">
-              <div className="col-md-4">
-                <div className="text-center mb-4">
-                  <img
-                    className="img-fluid"
-                    src="https://www.americanpest.es/wp-content/uploads/2022/10/icono-salud-personas-y-mascotas.svg"
-                    alt="Icono salud personas y mascotas"
-                  />
-                </div>
-                <h6 className="text-center text-white">
-                  Nos preocupamos por la salud de personas y mascotas
-                </h6>
+            <div className="card text-center">
+              <div className="card-header"></div>
+              <div className="card-body">
+                <h5 className="card-title">Satisfacción garantizada</h5>
+                <p className="card-text">
+                  Ofrecemos los productos líderes en Latinoamérica, y un equipo
+                  altamente capacitado para superar tus expectativas.
+                  Garantizamos total satisfacción en cada servicio. <br /> Tu
+                  confianza es nuestra mayor motivación.
+                </p>
+                <a href="#" className="btn boto">
+                  Contáctanos
+                </a>
               </div>
-              <div className="col-md-4">
-                <div className="text-center mb-4">
-                  <img
-                    className="img-fluid"
-                    src="https://www.americanpest.es/wp-content/uploads/2022/10/icono-respeto-medio-ambiente.svg"
-                    alt="Icono respeto al medio ambiente"
-                  />
-                </div>
-                <h6 className="text-center text-white">
-                  Nos preocupamos por el medio ambiente
-                </h6>
-              </div>
+              <div className="card-footer text-body-secondary"></div>
             </div>
-          </div>
-          <h4 className="servicios">Servicios profesionales</h4>
-          <img
-            src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisorInvertido.png"
-            className="divisor"
-            alt="divisor"
-          ></img>
-          <div className="servicesContainer">
-            <Services
-              imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios1.jpg"
-              alt="ratas"
-              title="Roedores"
-              content="Exterminio total de Ratas, ratones y todo tipo de roedores."
-            />
-            <Services
-              imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios2.jpg"
-              alt="cucarachas"
-              title="Cucarachas"
-              content="Exterminio total de cucarachas en hogares, hoteles, negocios de alimentos y comercios."
-            />
-            <Services
-              imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios3.jpg"
-              alt="hormigas"
-              title="Hormigas"
-              content="Eficiencia y seguridad en eliminación de hormigas y todo su rastro."
-            />
-            <Services
-              imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios4.jpg"
-              alt="voladores"
-              title="Insectos voladores"
-              content="Libérate de los molestos y contaminantes insectos voladores."
-            />
-            <Services
-              imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios5.jpg"
-              alt="desinfeccion"
-              title="Desinfección de ambientes"
-              content="Para un espacio seguro y saludable solicita nuestros servicios profesionales."
-            />
-          </div>
-          <img
-            src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisor.png"
-            className="divisor"
-            alt="divisor"
-          ></img>
-          <div className="card text-center">
-            <div className="card-header"></div>
-            <div className="card-body">
-              <h5 className="card-title">Satisfacción garantizada</h5>
-              <p className="card-text">
-                Ofrecemos los productos líderes en Latinoamérica, y un equipo
-                altamente capacitado para superar tus expectativas. Garantizamos
-                total satisfacción en cada servicio. <br /> Tu confianza es
-                nuestra mayor motivación.
-              </p>
-              <a href="#" className="btn boto">
-                Contáctanos
-              </a>
-            </div>
-            <div className="card-footer text-body-secondary"></div>
-          </div>
-        </main>
+          </main>
+        </div>
         <div className="footer-container">
           <img
             src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/logoEcoPlagasNegro.png"
@@ -374,7 +347,7 @@ function App() {
                   <i className="fa fa-github">
                     <img
                       className="face"
-                      src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/iconoFacebook.png"
+                      src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/52b0d2691cb8e4cc71e88232b793cb9f0dce77b8/img/iconoGitHub.svg"
                     />
                   </i>
                 </a>
