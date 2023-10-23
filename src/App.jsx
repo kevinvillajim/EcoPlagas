@@ -305,7 +305,9 @@ function App() {
                   Contáctanos
                 </a>
               </p>
-              <p className="footer-company-name">Eco Plagas © 2023</p>
+              <p id="footer-company" className="footer-company-name">
+                Eco Plagas © 2023
+              </p>
             </div>
             <div className="footer-center">
               <div>
@@ -321,7 +323,7 @@ function App() {
               <div>
                 <i className="fa fa-envelope"></i>
                 <p>
-                  <a href="mailto:info@eco-plagas.net">
+                  <a id="contact-mail" href="mailto:info@eco-plagas.net">
                     support@ecoplagas-ec.com
                   </a>
                 </p>
