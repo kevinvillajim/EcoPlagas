@@ -464,6 +464,7 @@ li {
     flex-direction: column;
     position: static;
     font-size: 12px;
+    padding: 1rem;
   }
   .aval {
     padding: 0;
