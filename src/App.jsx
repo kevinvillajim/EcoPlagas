@@ -62,11 +62,15 @@ function App() {
               <div className="carousel-inner">
                 <div className="carousel-item active" data-bs-interval="10000">
                   <img
+                    id="carrousel-item-active-img"
                     src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/cucarachas.jpg"
                     className="d-block w-100 carrusel"
                     alt="cucarachas"
                   />
-                  <div className="carousel-caption d-none d-md-block b infoCarrusel">
+                  <div
+                    id="carrousel-text"
+                    className="carousel-caption d-md-block b infoCarrusel"
+                  >
                     <h5
                       className="text-white carrouselText
                     "
@@ -78,6 +82,8 @@ function App() {
                     "
                     >
                       Somos los primeros en Ecuador en ofrecer garantía del 100%
+                      en el exterminio de cucarachas, ninfas y sus huevos. Sin
+                      afectar a tu mascotas ni al ambiente.
                     </p>
                   </div>
                 </div>
@@ -87,7 +93,7 @@ function App() {
                     className="d-block w-100 carrusel"
                     alt="ratas"
                   />
-                  <div className="carousel-caption d-none d-md-block b infoCarrusel">
+                  <div className="carousel-caption d-md-block b infoCarrusel">
                     <h5 className="text-white carrouselText">Roedores?</h5>
                     <p className="text-white carrouselText">
                       ¡Despídete de los roedores para siempre! Nuestro servicio
@@ -102,7 +108,7 @@ function App() {
                     className="d-block w-100 carrusel"
                     alt="hormigas"
                   />
-                  <div className="carousel-caption d-none d-md-block b infoCarrusel">
+                  <div className="carousel-caption d-md-block b infoCarrusel">
                     <h5
                       className="text-white carrouselText
                     "
@@ -142,7 +148,7 @@ function App() {
                 <span className="visually-hidden">Proximo</span>
               </button>
             </div>
-            <div>
+            <div id="aval-container">
               <img
                 src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisorInvertido.png"
                 className="divisor"
@@ -182,8 +188,11 @@ function App() {
                 alt="divisor"
               ></img>
             </div>
-            <div className="contBot d-flex justify-content-evenly">
-              <div className="col w-50 d-flex tituloBoton">
+            <div
+              id="eco-container"
+              className="contBot d-flex justify-content-evenly"
+            >
+              <div id="eco-info" className="col d-flex tituloBoton">
                 <h2 className="text-center text-white">
                   ELIMINAMOS LA PLAGA CON UN TRATAMIENTO EFICAZ SIN UTILIZACIÓN
                   DE PRODUCTOS TÓXICOS
@@ -195,11 +204,11 @@ function App() {
                   Solicita inspección gratuita
                 </a>
               </div>
-              <div className="row w-50 iconosInfo">
+              <div id="eco-icons-container" className="row iconosInfo">
                 <div className="col-md-4">
                   <div className="text-center mb-4">
                     <img
-                      className="img-fluid"
+                      className="img-fluid eco-icons-img"
                       src="https://www.americanpest.es/wp-content/uploads/2022/10/icono-salud-personas-y-mascotas.svg"
                       alt="Icono salud personas y mascotas"
                     />
@@ -211,7 +220,7 @@ function App() {
                 <div className="col-md-4">
                   <div className="text-center mb-4">
                     <img
-                      className="img-fluid"
+                      className="img-fluid eco-icons-img"
                       src="https://www.americanpest.es/wp-content/uploads/2022/10/icono-respeto-medio-ambiente.svg"
                       alt="Icono respeto al medio ambiente"
                     />
@@ -222,43 +231,45 @@ function App() {
                 </div>
               </div>
             </div>
-            <h4 className="servicios">Servicios profesionales</h4>
             <img
               src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisorInvertido.png"
               className="divisor"
               alt="divisor"
             ></img>
             <div className="servicesContainer">
-              <Services
-                imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios1.jpg"
-                alt="ratas"
-                title="Roedores"
-                content="Exterminio total de Ratas, ratones y todo tipo de roedores."
-              />
-              <Services
-                imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios2.jpg"
-                alt="cucarachas"
-                title="Cucarachas"
-                content="Exterminio total de cucarachas en hogares, hoteles, negocios de alimentos y comercios."
-              />
-              <Services
-                imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios3.jpg"
-                alt="hormigas"
-                title="Hormigas"
-                content="Eficiencia y seguridad en eliminación de hormigas y todo su rastro."
-              />
-              <Services
-                imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios4.jpg"
-                alt="voladores"
-                title="Insectos voladores"
-                content="Libérate de los molestos y contaminantes insectos voladores."
-              />
-              <Services
-                imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios5.jpg"
-                alt="desinfeccion"
-                title="Desinfección de ambientes"
-                content="Para un espacio seguro y saludable solicita nuestros servicios profesionales."
-              />
+              <h4 className="servicios aval">Servicios profesionales</h4>
+              <div id="services">
+                <Services
+                  imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios1.jpg"
+                  alt="ratas"
+                  title="Roedores"
+                  content="Exterminio total de Ratas, ratones y todo tipo de roedores."
+                />
+                <Services
+                  imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios2.jpg"
+                  alt="cucarachas"
+                  title="Cucarachas"
+                  content="Exterminio total de cucarachas en hogares, hoteles, negocios de alimentos y comercios."
+                />
+                <Services
+                  imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios3.jpg"
+                  alt="hormigas"
+                  title="Hormigas"
+                  content="Eficiencia y seguridad en eliminación de hormigas y todo su rastro."
+                />
+                <Services
+                  imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios4.jpg"
+                  alt="voladores"
+                  title="Insectos voladores"
+                  content="Libérate de los molestos y contaminantes insectos voladores."
+                />
+                <Services
+                  imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios5.jpg"
+                  alt="desinfeccion"
+                  title="Desinfección de ambientes"
+                  content="Para un espacio seguro y saludable solicita nuestros servicios profesionales."
+                />
+              </div>
             </div>
             <img
               src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisor.png"

@@ -88,6 +88,7 @@ li {
 .infoCarrusel {
   background-color: #2b2b2b;
   opacity: 0.6;
+  position: absolute;
 }
 
 .carrouselText {
@@ -102,7 +103,17 @@ li {
   background-color: white;
   flex-wrap: wrap;
 }
-
+#eco-icons-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  width: 50%;
+}
+#eco-info {
+  width: 50%;
+  align-content: center;
+}
 .imgBox2 {
   width: 240px;
   height: 85px;
@@ -218,9 +229,12 @@ li {
 .servicesContainer {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
-
+#services {
+  display: flex;
+  justify-content: center;
+}
 .footer-container {
   position: relative;
   z-index: 999; /* Asegúrate de que el z-index sea mayor que el del contenido principal */
@@ -428,8 +442,90 @@ li {
 }
 
 /* Cambia la posición del .footer-container después de cierto punto de desplazamiento */
-@media screen and (min-height: 600px) {
+@media (max-width: 925px) {
   .footer-container {
     position: relative;
+  }
+  #nav-text-container {
+    display: none;
+  }
+  .logo {
+    width: 70px;
+    top: 1px;
+  }
+  .border-total-container {
+    padding: 0 6%;
+  }
+  .carrusel {
+    height: 250px;
+  }
+  .infoCarrusel {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    font-size: 12px;
+  }
+  .aval {
+    padding: 0;
+    margin: 1.5rem 0;
+    font-size: 25px;
+    text-align: center;
+  }
+  #eco-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #eco-info {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  #eco-icons-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .eco-icons-img {
+    height: 10rem;
+  }
+  .caption-style-4 .caption-text {
+    width: 15rem;
+    height: 15rem;
+  }
+  .li > img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .caption-style-4 .blur {
+    height: 15rem;
+    width: 15rem;
+  }
+  .servicesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #services {
+    padding-bottom: 2rem;
+  }
+  .footer-container {
+    bottom: -15rem;
+    text-align: center;
+  }
+  .logoFooter {
+    bottom: 32rem;
+    z-index: 1000;
+    left: 0;
+  }
+  .footer-icons {
+    display: flex;
+    justify-content: center;
   }
 }
