@@ -292,6 +292,28 @@ function App() {
               </div>
               <div className="card-footer text-body-secondary"></div>
             </div>
+            <div id="enfoque-clientes-container">
+              <div id="enfoque-clientes-residenciales">
+                <img src="imagen1"></img>
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  deleniti unde soluta minima provident facere fugiat. Eaque
+                  perspiciatis commodi voluptate doloremque doloribus ut hic
+                  facilis numquam, nobis id, temporibus inventore!
+                </span>
+                <button>Ver mas</button>
+              </div>
+              <div id="enfoque-clientes-comerciales">
+                <img src="imagen1"></img>
+                <span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  deleniti unde soluta minima provident facere fugiat. Eaque
+                  perspiciatis commodi voluptate doloremque doloribus ut hic
+                  facilis numquam, nobis id, temporibus inventore!
+                </span>
+                <button>Ver mas</button>
+              </div>
+            </div>
           </main>
         </div>
         <div className="footer-container">
