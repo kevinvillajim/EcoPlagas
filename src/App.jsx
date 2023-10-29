@@ -144,35 +144,35 @@ function App() {
               <div className="iconos">
                 <a href="https://npmapestworld.org/">
                   <img
-                    src="/img/Imagen1.png"
+                    src="./img/Imagen1.png"
                     className="imgBox"
                     alt="organismos-control-NPMA"
                   ></img>
                 </a>
                 <a href="https://www.who.int/">
                   <img
-                    src="/img/Imagen2.jpg"
+                    src="./img/Imagen2.jpg"
                     className="imgBox2"
                     alt="organismos-control-WHO"
                   ></img>
                 </a>
                 <a href="https://espanol.epa.gov/">
                   <img
-                    src="/img/Imagen3.png"
+                    src="./img/Imagen3.png"
                     className="imgBox2"
                     alt="organismos-control-EPA"
                   ></img>
                 </a>
                 <a href="https://www.controlsanitario.gob.ec/">
                   <img
-                    src="/img/Imagen4.png"
+                    src="./img/Imagen4.png"
                     className="imgBox"
                     alt="organismos-control-Ecuador-RCVS"
                   ></img>
                 </a>
                 <a href="https://www.ambiente.gob.ec/">
                   <img
-                    src="img/Imagen5.png"
+                    src="./img/Imagen5.png"
                     className="imgBox"
                     alt="organismos-control-Ecuador-ministerio-de-ambiente"
                   ></img>
@@ -276,7 +276,7 @@ function App() {
               <h3 className="sub-title">Tipos de servicio</h3>
               <div id="enfoque-clientes-container">
                 <CardEnfoque
-                  img="/img/clientes1.jpg"
+                  img="./img/clientes1.jpg"
                   title="Residenciales"
                   text="En un mundo donde la tranquilidad de tu hogar es más valiosa
                   que nunca, aquella tranquilidad es transformada en miedo, asco
@@ -290,7 +290,7 @@ function App() {
                   textBtn="Ver mas"
                 />
                 <CardEnfoque
-                  img="/img/clientes2.jpg"
+                  img="./img/clientes2.jpg"
                   title="Comerciales"
                   text="En el mundo competitivo de los negocios, cada detalle cuenta.
                   La presencia de plagas no solo puede ser molesta, sino también
