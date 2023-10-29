@@ -1,36 +1,22 @@
-import PropTypes from "prop-types";
+/* eslint-disable react/jsx-no-target-blank */
+import { Header } from "./components/Header";
+import { Services } from "./components/Services";
+import { Footer } from "./components/Footer";
+import { CardEnfoque } from "./components/CardEnfoque";
+import { WhyCard } from "./components/WhyCard";
+//Icons
+import HandshakeIcon from "@mui/icons-material/Handshake";
+import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
+import LocalFloristIcon from "@mui/icons-material/LocalFlorist";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+//-----
 import "./App.css";
 
 function App() {
   return (
     <>
       <div className="total-container">
-        <div className="sticky-container">
-          <a className="navbar-brand" href="#">
-            <img
-              className="logo"
-              alt="logo-eco-plagas"
-              src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/public/logo2.png"
-            ></img>
-          </a>
-          <nav id="cont-header" className="navbar-fixed">
-            <div id="nav-text-container">
-              <a href="#" className="nav-text">
-                {" "}
-                Residenciales
-              </a>
-              <a href="#" className="nav-text">
-                Comerciales
-              </a>
-              <a href="#" className="nav-text">
-                Sobre Nosotros
-              </a>
-              <a href="#" className="nav-text">
-                Contáctanos
-              </a>
-            </div>
-          </nav>
-        </div>
+        <Header />
         <div className="border-total-container">
           <main>
             <div
@@ -81,9 +67,9 @@ function App() {
                       className="text-white carrouselText
                     "
                     >
-                      Somos los primeros en Ecuador en ofrecer garantía del 100%
-                      en el exterminio de cucarachas, ninfas y sus huevos. Sin
-                      afectar a tu mascotas ni al ambiente.
+                      Somos la primera en Ecuador especialeizada en exterminio
+                      del 100% de cucarachas, ninfas y sus huevecillos. No sólo
+                      controlamos... Las exterminamos.
                     </p>
                   </div>
                 </div>
@@ -156,31 +142,41 @@ function App() {
               ></img>
               <h5 className="aval">Con el aval de:</h5>
               <div className="iconos">
-                <img
-                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen1.png"
-                  className="imgBox"
-                  alt="organismos-control-NPMA"
-                ></img>
-                <img
-                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen2.jpg"
-                  className="imgBox2"
-                  alt="organismos-control-WHO"
-                ></img>
-                <img
-                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen3.png"
-                  className="imgBox2"
-                  alt="organismos-control-EPA"
-                ></img>
-                <img
-                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen4.png"
-                  className="imgBox"
-                  alt="organismos-control-Ecuador-RCVS"
-                ></img>
-                <img
-                  src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen5.png"
-                  className="imgBox"
-                  alt="organismos-control-Ecuador-ministerio-de-ambiente"
-                ></img>
+                <a href="https://npmapestworld.org/">
+                  <img
+                    src="/img/Imagen1.png"
+                    className="imgBox"
+                    alt="organismos-control-NPMA"
+                  ></img>
+                </a>
+                <a href="https://www.who.int/">
+                  <img
+                    src="/img/Imagen2.jpg"
+                    className="imgBox2"
+                    alt="organismos-control-WHO"
+                  ></img>
+                </a>
+                <a href="https://espanol.epa.gov/">
+                  <img
+                    src="/img/Imagen3.png"
+                    className="imgBox2"
+                    alt="organismos-control-EPA"
+                  ></img>
+                </a>
+                <a href="https://www.controlsanitario.gob.ec/">
+                  <img
+                    src="/img/Imagen4.png"
+                    className="imgBox"
+                    alt="organismos-control-Ecuador-RCVS"
+                  ></img>
+                </a>
+                <a href="https://www.ambiente.gob.ec/">
+                  <img
+                    src="img/Imagen5.png"
+                    className="imgBox"
+                    alt="organismos-control-Ecuador-ministerio-de-ambiente"
+                  ></img>
+                </a>
               </div>
               <img
                 src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/divisor.png"
@@ -237,7 +233,7 @@ function App() {
               alt="divisor"
             ></img>
             <div className="servicesContainer">
-              <h4 className="servicios aval">Servicios profesionales</h4>
+              <h3 className="servicios aval">Servicios profesionales</h3>
               <div id="services">
                 <Services
                   imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios1.jpg"
@@ -276,10 +272,43 @@ function App() {
               className="divisor"
               alt="divisor"
             ></img>
-            <div className="card text-center">
+            <div id="enfoque-clientes-total">
+              <h3 className="sub-title">Tipos de servicio</h3>
+              <div id="enfoque-clientes-container">
+                <CardEnfoque
+                  img="/img/clientes1.jpg"
+                  title="Residenciales"
+                  text="En un mundo donde la tranquilidad de tu hogar es más valiosa
+                  que nunca, aquella tranquilidad es transformada en miedo, asco
+                  y mas importante, un foco de enfermedades que pueden afectar a
+                  ti y los tuyos. Durante 2 años hemos sido guardianes
+                  silenciosos de hogares como el tuyo, protegiéndolos de las
+                  plagas de manera segura y efectiva. Nuestros productos son más
+                  que simples soluciones; son promesas de seguridad para tu
+                  familia, mascotas y para el medio ambiente que todos
+                  compartimos."
+                  textBtn="Ver mas"
+                />
+                <CardEnfoque
+                  img="/img/clientes2.jpg"
+                  title="Comerciales"
+                  text="En el mundo competitivo de los negocios, cada detalle cuenta.
+                  La presencia de plagas no solo puede ser molesta, sino también
+                  un duro golpe para la reputación de tu negocio, empresa o
+                  fábrica, generando silenciosamente perdidas importantes. Somos
+                  líderes en la industria del control de plagas, y estamos aquí
+                  para proteger lo que has construido con tanto esfuerzo.
+                  Nuestros productos son más que soluciones, son garantías de
+                  seguridad para tus empleados, clientes y tu negocio en
+                  general."
+                  textBtn="Ver mas"
+                />
+              </div>
+            </div>
+            <div id="card-invitation-container" className="card text-center">
               <div className="card-header"></div>
               <div className="card-body">
-                <h5 className="card-title">Satisfacción garantizada</h5>
+                <h3 className="card-title">Satisfacción garantizada</h3>
                 <p className="card-text">
                   Ofrecemos los productos líderes en Latinoamérica, y un equipo
                   altamente capacitado para superar tus expectativas.
@@ -292,135 +321,67 @@ function App() {
               </div>
               <div className="card-footer text-body-secondary"></div>
             </div>
-            <div id="enfoque-clientes-container">
-              <div id="enfoque-clientes-residenciales">
-                <img src="imagen1"></img>
-                <span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                  deleniti unde soluta minima provident facere fugiat. Eaque
-                  perspiciatis commodi voluptate doloremque doloribus ut hic
-                  facilis numquam, nobis id, temporibus inventore!
-                </span>
-                <button>Ver mas</button>
-              </div>
-              <div id="enfoque-clientes-comerciales">
-                <img src="imagen1"></img>
-                <span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                  deleniti unde soluta minima provident facere fugiat. Eaque
-                  perspiciatis commodi voluptate doloremque doloribus ut hic
-                  facilis numquam, nobis id, temporibus inventore!
-                </span>
-                <button>Ver mas</button>
+            <div id="why-container">
+              <h3 className="sub-title">Por que somos la mejor opción?</h3>
+              <div id="why-card-container">
+                <WhyCard
+                  img={
+                    <HandshakeIcon
+                      sx={{
+                        color: "rgb(77, 181, 213)",
+                        width: "120px",
+                        height: "120px",
+                      }}
+                    />
+                  }
+                  title="Ética y Transparencia"
+                  text="Creemos en la honestidad y transparencia en cada paso. Te explicamos detalladamente nuestro proceso, para que estés completamente informado y tranquilo durante todo el procedimiento sin novedades, sin sorpresas."
+                />
+                <WhyCard
+                  img={
+                    <MilitaryTechIcon
+                      sx={{
+                        color: "rgb(77, 181, 213)",
+                        width: "120px",
+                        height: "120px",
+                      }}
+                    />
+                  }
+                  title="Tecnología de Vanguardia"
+                  text="No somos solo una empresa, somos un compromiso. Garantizamos la eliminación completa de plagas molestas y peligrosas de tu hogar o negocio. Tu satisfacción es nuestra prioridad número uno."
+                />
+                <WhyCard
+                  img={
+                    <LocalFloristIcon
+                      sx={{
+                        color: "rgb(77, 181, 213)",
+                        width: "120px",
+                        height: "120px",
+                      }}
+                    />
+                  }
+                  title="Productos de priméra categoría"
+                  text="Nuestros productos son los mejores del mercado. Utilizan la última tecnología, eliminando plagas sin dañar el medio ambiente, las plantas, los animales ni a las personas. Tu seguridad es nuestra responsabilidad."
+                />
               </div>
             </div>
+            <a
+              id="whatsapp-link"
+              href="https://api.whatsapp.com/send?phone=593995031066&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
+              target="_blank"
+            >
+              <div id="whatsapp-btn">
+                <WhatsAppIcon
+                  sx={{ width: "45px", height: "45px", color: "#fff" }}
+                />
+              </div>
+            </a>
           </main>
         </div>
-        <div className="footer-container">
-          <img
-            src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/logoEcoPlagasNegro.png"
-            alt="logo-eco-plagas-fondo-negro"
-            className="logoFooter"
-          />
-          <footer className="footer-distributed">
-            <div className="footer-left">
-              <p className="footer-links">
-                <a className="link-1 elementosFooter" href="#">
-                  Residenciales
-                </a>
-                <a href="#" className="elementosFooter">
-                  Comerciales
-                </a>
-                <a href="#" className="elementosFooter">
-                  Sobre Nosotros
-                </a>
-                <a href="#" className="elementosFooter">
-                  Contáctanos
-                </a>
-              </p>
-              <p id="footer-company" className="footer-company-name">
-                Eco Plagas © 2023
-              </p>
-            </div>
-            <div className="footer-center">
-              <div>
-                <i className="fa fa-map-marker"></i>
-                <p>
-                  <span>Diego García S8-61 y Av. Alpahuasi</span> Quito, Ecuador
-                </p>
-              </div>
-              <div>
-                <i className="fa fa-phone"></i>
-                <p>+593 99 503 1066</p>
-              </div>
-              <div>
-                <i className="fa fa-envelope"></i>
-                <p>
-                  <a id="contact-mail" href="mailto:info@eco-plagas.net">
-                    support@ecoplagas-ec.com
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className="footer-right">
-              <div className="footer-icons">
-                <a href="#">
-                  <i className="fa fa-facebook">
-                    <img
-                      className="face"
-                      src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/iconoFacebook.png"
-                    />
-                  </i>
-                </a>
-                <a href="#">
-                  <i className="fa fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i className="fa fa-linkedin"></i>
-                </a>
-                <a href="#">
-                  <i className="fa fa-github">
-                    <img
-                      className="face"
-                      src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/52b0d2691cb8e4cc71e88232b793cb9f0dce77b8/img/iconoGitHub.svg"
-                    />
-                  </i>
-                </a>
-              </div>
-            </div>
-          </footer>
-        </div>
+        <Footer />
       </div>
     </>
   );
 }
 
 export default App;
-
-function Services({ imag, alt, title, content }) {
-  return (
-    <>
-      <div className="caption-style-4">
-        <div className="li">
-          <img src={imag} alt={alt} />
-          <div className="caption">
-            <div className="blur"></div>
-            <div className="caption-text">
-              <h1>{title}</h1>
-              <p>{content}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
-
-export { Services };
-
-Services.propTypes = {
-  imag: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-};

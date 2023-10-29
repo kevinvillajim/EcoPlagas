@@ -12,7 +12,7 @@
 
 main {
   box-shadow: 1px 0px 20px black;
-  padding-bottom: 100%;
+  padding-bottom: 350px;
 }
 
 .navbar-fixed {
@@ -221,15 +221,25 @@ li {
   height: 12rem;
 }
 
+h3 {
+  font-weight: 640;
+}
+
 .servicios {
-  margin-top: 3rem;
+  margin: 3rem 0;
   text-align: center;
+}
+
+.sub-title {
+  text-align: center;
+  margin: 4rem 0;
 }
 
 .servicesContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 4rem;
 }
 #services {
   display: flex;
@@ -249,7 +259,7 @@ li {
   font: bold 16px;
   padding: 55px 50px;
   position: absolute;
-  bottom: 1px;
+  bottom: 0;
 }
 
 .footer-distributed .footer-left,
@@ -414,6 +424,129 @@ li {
   margin-bottom: 5px;
 }
 
+#enfoque-clientes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 4rem;
+}
+
+.card-body {
+  padding: 3rem 4rem;
+}
+
+.clientes-img {
+  width: 100%;
+}
+
+.clientes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border: solid 1.5px #92999f;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgb(80, 80, 80);
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+.clientes-title {
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 20px;
+}
+#whatsapp-btn {
+  background-color: rgb(77, 194, 71);
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#whatsapp-link {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+}
+#whatsapp-link:hover > :first-child {
+  --escala: 1.2;
+  cursor: pointer;
+}
+#whatsapp-link > :first-child {
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;
+}
+.clientes-text {
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+}
+
+.clientes-btn {
+  padding: 0.3rem 1.5rem;
+  margin-top: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 580;
+  border-radius: 10px;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.clientes-btn:hover {
+  background-color: #dcdcdc;
+  color: rgb(34, 34, 34);
+}
+#why-container {
+  margin: 1rem 4rem;
+  text-align: center;
+}
+#why-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.why-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: solid 1px #e2e2e2;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.why-text {
+  color: rgb(77, 181, 213);
+}
+
+.why-card:hover .why-img-container > :first-child {
+  color: #8fc740;
+}
+
+.why-card:hover .why-title {
+  color: #587c25;
+}
+.why-card:hover .why-text {
+  color: #415d1a;
+}
+
+.why-card:hover {
+  box-shadow: 1px 1px 10px rgb(223, 223, 223);
+}
+
+#card-invitation-container {
+  margin: 3rem 0;
+}
+
+.why-title {
+  margin: 2rem 0;
+  color: #1183a3;
+}
+
 @media (max-width: 880px) {
   .footer-distributed {
     font: bold 14px sans-serif;
@@ -490,7 +623,7 @@ li {
   }
   #eco-icons-container {
     width: 100%;
-    margin: 0;
+    margin: 1rem 0;
     padding: 0;
   }
   .eco-icons-img {
@@ -528,5 +661,42 @@ li {
   .footer-icons {
     display: flex;
     justify-content: center;
+  }
+  #enfoque-clientes-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.2rem;
+  }
+  .clientes {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  main {
+    padding-bottom: 20rem;
+  }
+  .contacto {
+    margin: 2rem 0;
+  }
+  .card-body {
+    padding: auto;
+  }
+  .sub-title {
+    margin: 2rem 0;
+  }
+  #why-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #whatsapp-link {
+    right: 13%;
+    bottom: 30px;
+  }
+  #whatsapp-link > :first-child {
+    width: 40px;
+    height: 40px;
+  }
+  #whatsapp-link > :first-child > :first-child {
+    width: 30px;
+    height: 30px;
   }
 }
