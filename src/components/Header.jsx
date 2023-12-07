@@ -1,8 +1,10 @@
-export function Header() {
+import PropTypes from "prop-types";
+
+export function Header({ text }) {
   return (
     <>
       <div className="sticky-container">
-        <a className="navbar-brand" href="#">
+        <a href="/" className="navbar-brand">
           <img
             className="logo"
             alt="logo-eco-plagas"
@@ -10,23 +12,13 @@ export function Header() {
           ></img>
         </a>
         <nav id="cont-header" className="navbar-fixed">
-          <div id="nav-text-container">
-            <a href="#" className="nav-text">
-              {" "}
-              Residenciales
-            </a>
-            <a href="#" className="nav-text">
-              Comerciales
-            </a>
-            <a href="#" className="nav-text">
-              Sobre Nosotros
-            </a>
-            <a href="#" className="nav-text">
-              Contáctanos
-            </a>
-          </div>
+          <div id="nav-text-container">{text}</div>
         </nav>
       </div>
     </>
   );
 }
+
+Header.propTypes = {
+  text: PropTypes.element.isRequired,
+};
