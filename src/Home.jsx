@@ -156,7 +156,7 @@ function Home() {
 					<a href="https://www.controlsanitario.gob.ec/">
 						<img
 							src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/Imagen4.png"
-							className="imgBox"
+							className="imgBox imgboxe"
 							alt="organismos-control-Ecuador-RCVS"
 						></img>
 					</a>
@@ -182,7 +182,8 @@ function Home() {
 					</h2>
 					<a
 						className="btn btn-light d-block mx-auto mb-4 contacto"
-						href="https://www.americanpest.es/contactanos/"
+						href="https://api.whatsapp.com/send?phone=593995031066&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
+						target="_blank"
 					>
 						Solicita inspección gratuita
 					</a>
@@ -223,7 +224,7 @@ function Home() {
 				<h3 className="servicios aval">Servicios profesionales</h3>
 				<div id="services">
 					<Services
-						imag="/img/servicios1.jpg"
+						imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios1.jpg"
 						alt="ratas"
 						title="Roedores"
 						content="Exterminio total de Ratas, ratones y todo tipo de roedores."
@@ -241,7 +242,7 @@ function Home() {
 						content="Eficiencia y seguridad en eliminación de hormigas y todo su rastro."
 					/>
 					<Services
-						imag="/img/servicios4.jpg"
+						imag="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/servicios4.jpg"
 						alt="voladores"
 						title="Insectos voladores"
 						content="Libérate de los molestos y contaminantes insectos voladores."
@@ -307,7 +308,7 @@ function Home() {
 				id="divisor2"
 				className="divisor"
 				alt="divisor"
-				src="/img/separador2.png"
+				src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/separador2.png"
 			/>
 			<div id="enfoque-clientes-total">
 				<h3 className="sub-title">Tipos de servicio</h3>
@@ -352,7 +353,10 @@ function Home() {
 						total satisfacción en cada servicio. <br /> Tu confianza es nuestra
 						mayor motivación.
 					</p>
-					<a href="#" className="btn boto">
+					<a
+						href="https://api.whatsapp.com/send?phone=593995031066&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
+						className="btn boto"
+					>
 						Contáctanos
 					</a>
 				</div>

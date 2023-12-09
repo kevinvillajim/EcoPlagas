@@ -13,7 +13,7 @@ function About() {
 			<div id="about-container">
 				<div id="about-content">
 					<img
-						src="../img/cucaracha1.jpg"
+						src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/cucaracha1.jpg"
 						alt="especializados_en_cucarachas"
 						className="about-img"
 					/>
@@ -109,7 +109,7 @@ function About() {
 						propagada
 					</h4>
 					<img
-						src="../img/cucaracha2.jpg"
+						src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/cucaracha2.jpg"
 						alt="especializados_en_cucarachas_2"
 						className="about-img"
 					/>

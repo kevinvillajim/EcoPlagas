@@ -619,6 +619,10 @@ h3 {
 	height: 300px;
 	object-fit: cover;
 }
+.imgboxe {
+	width: 100px;
+	height: 90px;
+}
 
 .img-carrusel {
 	object-fit: cover;
