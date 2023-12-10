@@ -1,5 +1,5 @@
 import "./App.css";
-import { CardEnfoque } from "./components/CardEnfoque";
+import {CardEnfoque} from "./components/CardEnfoque";
 
 //icons
 
@@ -38,6 +38,18 @@ function ServiciosComerciales() {
 							img="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/comerciales5.jpg"
 							title="Oficinas"
 							text="Un ambiente de trabajo saludable es esencial para la productividad y el bienestar de tus empleados. Con nuestro servicio para oficinas, nos encargamos de eliminar cualquier distracción que las plagas puedan causar. Desde oficinas individuales hasta espacios de trabajo compartidos, creamos un entorno libre de plagas para que tu equipo se enfoque en lo importante: el éxito de tu empresa."
+							textBtn="Solicitar visita técnica"
+						/>
+						<CardEnfoque
+							img="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/comerciales6.jpg"
+							title="Hospitales y Clínicas"
+							text="En el ámbito delicado de la salud, la presencia de plagas no tiene cabida. Nuestro servicio para hospitales y clínicas va más allá de la eliminación; es un compromiso con la seguridad sanitaria. Comprendemos la importancia de mantener instalaciones médicas impecables. Desde salas de espera hasta áreas de tratamiento, nos encargamos de cada detalle. Con productos seguros y enfoques especializados, creamos un escudo confiable para pacientes y personal médico, garantizando un entorno de atención sin amenazas."
+							textBtn="Solicitar visita técnica"
+						/>
+						<CardEnfoque
+							img="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/comerciales7.jpg"
+							title="Clínicas dentales"
+							text="La precisión y la esterilidad son esenciales en el mundo dental, y en tu clínica, garantizamos que cada rincón esté protegido. Nos aseguramos de que las plagas no representen ninguna amenaza para tu entorno, desde la sala de espera hasta las áreas de tratamiento. Cumplimos con los estándares más rigurosos de higiene, brindando la confianza necesaria para que tus pacientes reciban atención dental en un ambiente libre de preocupaciones."
 							textBtn="Solicitar visita técnica"
 						/>
 					</div>

@@ -1,11 +1,12 @@
 /* eslint-disable react/jsx-no-target-blank */
-import { Services } from "./components/Services";
-import { CardEnfoque } from "./components/CardEnfoque";
-import { WhyCard } from "./components/WhyCard";
+import {Services} from "./components/Services";
+import {CardEnfoque} from "./components/CardEnfoque";
+import {WhyCard} from "./components/WhyCard";
 //Icons
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
 import LocalFloristIcon from "@mui/icons-material/LocalFlorist";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 //-----
 import "./App.css";
 
@@ -118,7 +119,7 @@ function Home() {
 					data-bs-slide="next"
 				>
 					<span
-						className="carousel-control-next-icon"
+						className="carousel-control-next-icon next-carrusel"
 						aria-hidden="true"
 					></span>
 					<span className="visually-hidden">Proximo</span>
@@ -261,7 +262,30 @@ function Home() {
 				alt="divisor"
 			></img>
 			<div id="why-container">
-				<h3 className="sub-title">Por que somos la mejor opción?</h3>
+				<h3 className="sub-title">
+					Por que <b className="title1">ECO PLAGAS</b> es la mejor opción?
+				</h3>
+				<div className="why-card-container2">
+					<WhyCard
+						img={
+							<EmojiEventsIcon
+								sx={{
+									color: "rgb(77, 181, 213)",
+									width: "120px",
+									height: "120px",
+								}}
+							/>
+						}
+						title="Beneficios de ECO PLAGAS"
+						text={[
+							"1)  Obtienes el control de la plaga desde la primera aplicación.",
+							<br key="1" />,
+							"2)  Productos totalmente amigables con el ambiente.",
+							<br key="2" />,
+							"3)  Despues del servicio obtendrás un certificado de control de plagas avalada por la agencia de regulacion de control sanitario para permiso de funcionamiento y Control o inspecciones sanitarias de cualquier organismo de control.",
+						]}
+					/>
+				</div>
 				<div id="why-card-container">
 					<WhyCard
 						img={

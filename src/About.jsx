@@ -1,5 +1,5 @@
 import "./App.css";
-import { WhyCard } from "./components/WhyCard";
+import {WhyCard} from "./components/WhyCard";
 
 //icons
 import AirIcon from "@mui/icons-material/Air";
@@ -17,8 +17,10 @@ function About() {
 						alt="especializados_en_cucarachas"
 						className="about-img"
 					/>
-					<h1 className="title1">AHORA EN ECUADOR, ECOPLAGAS</h1>
-					<h5 className="title2">
+					<h1 className="title1 title-main-about">
+						¡AHORA EN ECUADOR! ECOPLAGAS
+					</h1>
+					<h5 className="title2 sub-title-main-about">
 						La primera empresa especializada en el exterminio total de
 						cuacrachas.
 					</h5>
