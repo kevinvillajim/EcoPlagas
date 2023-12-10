@@ -62,6 +62,14 @@ main {
 	z-index: 999;
 }
 
+.logo2 {
+	width: 140px;
+	position: absolute;
+	top: 1px;
+	left: 17.5%;
+	z-index: 999;
+}
+
 li {
 	margin-right: 25px;
 	padding-right: 25px;
