@@ -57,6 +57,12 @@ function About() {
 										}}
 									/>
 								}
+								img2={
+									<img
+										className="img2"
+										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/why5.png"
+									/>
+								}
 								title="No huele"
 								text=""
 							/>
@@ -68,6 +74,12 @@ function About() {
 											width: "120px",
 											height: "120px",
 										}}
+									/>
+								}
+								img2={
+									<img
+										className="img2"
+										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/why6.png"
 									/>
 								}
 								title="No mancha las paredes ni materiales"
@@ -83,6 +95,12 @@ function About() {
 										}}
 									/>
 								}
+								img2={
+									<img
+										className="img2"
+										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/why7.png"
+									/>
+								}
 								title="No es tóxico para seres humanos ni mascotas"
 								text=""
 							/>
@@ -94,6 +112,12 @@ function About() {
 											width: "120px",
 											height: "120px",
 										}}
+									/>
+								}
+								img2={
+									<img
+										className="img2"
+										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/why8.png"
 									/>
 								}
 								title="Es amigable con el medio ambiente"

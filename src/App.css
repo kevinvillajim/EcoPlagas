@@ -537,6 +537,8 @@ h3 {
 	border-radius: 20px;
 	padding: 20px;
 	background-color: #ffffff;
+	cursor: pointer;
+	justify-content: center;
 }
 .why-text {
 	color: rgb(77, 181, 213);
@@ -685,6 +687,10 @@ h3 {
 	font-size: 32px;
 }
 
+.img2 {
+	width: 90%;
+}
+
 @media (max-width: 880px) {
 	.footer-distributed {
 		font: bold 14px sans-serif;
@@ -722,10 +728,48 @@ h3 {
 	}
 	.logo {
 		width: 70px;
-		top: 1px;
+		top: 1.2rem;
+		left: 1rem;
+	}
+	.logo2 {
+		width: 80px;
+		top: 1.5rem;
+		left: 5.6rem;
+	}
+	.why-card-container2 > :first-child > :last-child {
+		font-size: 11px;
+	}
+	.why-card-container2 > :first-child > :nth-child(2) {
+		font-size: 15px;
+		margin-top: 0.5rem;
+		margin-bottom: 0.8rem;
+	}
+	.why-title {
+		font-size: 20px;
+	}
+	.why-text {
+		font-size: 15px;
 	}
 	.border-total-container {
 		padding: 0 6%;
+	}
+	.clientes {
+		width: 100%;
+	}
+	.servicios > * {
+		flex: 0 0 100%;
+	}
+	.title-main-about {
+		font-size: 25px;
+	}
+	.sub-title-main-about {
+		font-size: 18px;
+	}
+	.why-container {
+		flex-direction: column;
+	}
+	.why-card {
+		margin: 1rem 0;
 	}
 	.carrusel {
 		height: 250px;

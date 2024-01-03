@@ -276,6 +276,12 @@ function Home() {
 								}}
 							/>
 						}
+						img2={
+							<img
+								className="img2"
+								src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/why1.jpg"
+							/>
+						}
 						title="Beneficios de ECO PLAGAS"
 						text={[
 							"1)  Obtienes el control de la plaga desde la primera aplicación.",
@@ -297,6 +303,12 @@ function Home() {
 								}}
 							/>
 						}
+						img2={
+							<img
+								className="img2"
+								src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/why2.jpg"
+							/>
+						}
 						title="Ética y Transparencia"
 						text="Creemos en la honestidad y transparencia en cada paso. Te explicamos detalladamente nuestro proceso, para que estés completamente informado y tranquilo durante todo el procedimiento sin novedades, sin sorpresas."
 					/>
@@ -310,6 +322,12 @@ function Home() {
 								}}
 							/>
 						}
+						img2={
+							<img
+								className="img2"
+								src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/why3.jpg"
+							/>
+						}
 						title="Tecnología de Vanguardia"
 						text="No somos solo una empresa, somos un compromiso. Garantizamos la eliminación completa de plagas molestas y peligrosas de tu hogar o negocio. Tu satisfacción es nuestra prioridad número uno."
 					/>
@@ -321,6 +339,12 @@ function Home() {
 									width: "120px",
 									height: "120px",
 								}}
+							/>
+						}
+						img2={
+							<img
+								className="img2"
+								src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/why4.jpg"
 							/>
 						}
 						title="Productos de priméra categoría"
