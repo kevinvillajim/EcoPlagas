@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-export function Footer({ text }) {
+export function Footer({text}) {
 	return (
 		<>
 			<div className="footer-container">
@@ -19,12 +19,13 @@ export function Footer({ text }) {
 						<div>
 							<i className="fa fa-map-marker"></i>
 							<p>
-								<span>Diego García S8-61 y Av. Alpahuasi</span> Quito, Ecuador
+								Av. las Palmeras y El Inca <br />
+								Quito, Ecuador
 							</p>
 						</div>
 						<div>
 							<i className="fa fa-phone"></i>
-							<p>+593 99 503 1066</p>
+							<p>+593 99 107 9118</p>
 						</div>
 						<div>
 							<i className="fa fa-envelope"></i>
