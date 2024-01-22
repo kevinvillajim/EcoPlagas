@@ -47,20 +47,36 @@ export function Footer({text}) {
 								</i>
 							</a>
 							<a href="#">
-								<i className="fa fa-twitter"></i>
-							</a>
-							<a href="#">
-								<i className="fa fa-linkedin"></i>
+								<i className="fa fa-github">
+									<img
+										className="face"
+										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/img/iconoInstagram.png"
+									/>
+								</i>
 							</a>
 							<a href="#">
 								<i className="fa fa-github">
 									<img
 										className="face"
-										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/52b0d2691cb8e4cc71e88232b793cb9f0dce77b8/img/iconoGitHub.svg"
+										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/img/iconoEmail.png"
+									/>
+								</i>
+							</a>
+							<a href="#">
+								<i className="fa fa-github">
+									<img
+										className="face"
+										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/img/iconoWhatsapp.png"
 									/>
 								</i>
 							</a>
 						</div>
+					</div>
+					<div className="by">
+						Website by{" "}
+						<a href="https://kevinvillajim.github.io/Portfolio/">
+							kevinvillajim
+						</a>
 					</div>
 				</footer>
 			</div>

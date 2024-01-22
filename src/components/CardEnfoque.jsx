@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export function CardEnfoque({ img, title, text, textBtn }) {
+export function CardEnfoque({img, title, text, textBtn, link}) {
 	return (
 		<>
 			<div className="clientes">
@@ -9,7 +9,9 @@ export function CardEnfoque({ img, title, text, textBtn }) {
 					<strong>{title}</strong>
 				</h3>
 				<span className="clientes-text">{text}</span>
-				<button className="clientes-btn">{textBtn}</button>
+				<a href={link} target="_blank" rel="noreferrer">
+					<button className="clientes-btn">{textBtn}</button>
+				</a>
 			</div>
 		</>
 	);
@@ -20,4 +22,5 @@ CardEnfoque.propTypes = {
 	title: PropTypes.string.isRequired,
 	text: PropTypes.string.isRequired,
 	textBtn: PropTypes.string.isRequired,
+	link: PropTypes.string.isRequired,
 };

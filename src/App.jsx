@@ -1,18 +1,28 @@
 /* eslint-disable react/jsx-no-target-blank */
 import Home from "./Home.jsx";
 import About from "./About.jsx";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
+import {Header} from "./components/Header";
+import {Footer} from "./components/Footer";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { useState } from "react";
+import {useState} from "react";
 import ServiciosResidenciales from "./ServiciosResidenciales.jsx";
 import ServiciosComerciales from "./ServiciosComerciales.jsx";
+
+const scrollToReference = (referenceId) => {
+	const element = document.getElementById(referenceId);
+
+	if (element) {
+		element.scrollIntoView({
+			behavior: "smooth",
+		});
+	}
+};
 
 function App() {
 	const [site, setSite] = useState("home");
 
 	return (
-		<div className="total-container">
+		<div className="total-container" id="top">
 			<Header
 				text={
 					<div>
@@ -33,7 +43,7 @@ function App() {
 							Sobre Nosotros
 						</a>
 						<a
-							href="https://api.whatsapp.com/send?phone=593995031066&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
+							href="https://api.whatsapp.com/send?phone=593991079118&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
 							target="_blank"
 							className="nav-text"
 						>
@@ -55,12 +65,12 @@ function App() {
 					)}
 					<a
 						id="whatsapp-link"
-						href="https://api.whatsapp.com/send?phone=593995031066&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
+						href="https://api.whatsapp.com/send?phone=593991079118&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
 						target="_blank"
 					>
 						<div id="whatsapp-btn">
 							<WhatsAppIcon
-								sx={{ width: "45px", height: "45px", color: "#fff" }}
+								sx={{width: "45px", height: "45px", color: "#fff"}}
 							/>
 						</div>
 					</a>
@@ -71,28 +81,43 @@ function App() {
 					<div>
 						<a
 							className="link-1 elementosFooter"
-							onClick={() => setSite("home")}
+							onClick={() => {
+								setSite("home");
+								scrollToReference("top");
+							}}
 						>
 							Home
 						</a>
 						<a
 							className="elementosFooter"
-							onClick={() => setSite("serviciosResidenciales")}
+							onClick={() => {
+								setSite("serviciosResidenciales");
+								scrollToReference("top");
+							}}
 						>
 							Residenciales
 						</a>
 						<a
 							className="elementosFooter"
-							onClick={() => setSite("serviciosComerciales")}
+							onClick={() => {
+								setSite("serviciosComerciales");
+								scrollToReference("top");
+							}}
 						>
 							Comerciales
 						</a>
-						<a className="elementosFooter" onClick={() => setSite("about")}>
+						<a
+							className="elementosFooter"
+							onClick={() => {
+								setSite("about");
+								scrollToReference("top");
+							}}
+						>
 							Sobre Nosotros
 						</a>
 						<a
 							className="elementosFooter"
-							href="https://api.whatsapp.com/send?phone=593995031066&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
+							href="https://api.whatsapp.com/send?phone=593991079118&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
 							target="_blank"
 						>
 							Contáctanos

@@ -183,7 +183,7 @@ function Home() {
 					</h2>
 					<a
 						className="btn btn-light d-block mx-auto mb-4 contacto"
-						href="https://api.whatsapp.com/send?phone=593995031066&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
+						href="https://api.whatsapp.com/send?phone=593991079118&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
 						target="_blank"
 					>
 						Solicita inspección gratuita
@@ -402,7 +402,7 @@ function Home() {
 						mayor motivación.
 					</p>
 					<a
-						href="https://api.whatsapp.com/send?phone=593995031066&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
+						href="https://api.whatsapp.com/send?phone=593991079118&text=Buenas%20tardes,%20me%20gustar%C3%ADa%20solicitar%20una%20visita%20t%C3%A9cnica%20para%20control%20de%20plagas."
 						className="btn boto"
 					>
 						Contáctanos

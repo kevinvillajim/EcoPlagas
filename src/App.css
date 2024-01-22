@@ -691,6 +691,20 @@ h3 {
 	width: 90%;
 }
 
+.by {
+	color: white;
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.by > :first-child {
+	color: #18acd1;
+	margin-left: 0.5rem;
+}
+
 @media (max-width: 880px) {
 	.footer-distributed {
 		font: bold 14px sans-serif;
@@ -714,7 +728,7 @@ h3 {
 	width: 172px;
 	position: relative;
 	left: 3rem;
-	bottom: 12rem;
+	bottom: 15rem;
 	z-index: 1000;
 }
 
