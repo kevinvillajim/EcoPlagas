@@ -50,7 +50,7 @@ export function Footer({text}) {
 								<i className="fa fa-github">
 									<img
 										className="face"
-										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/img/iconoInstagram.png"
+										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/iconoInstagram.png"
 									/>
 								</i>
 							</a>
@@ -58,7 +58,7 @@ export function Footer({text}) {
 								<i className="fa fa-github">
 									<img
 										className="face"
-										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/img/iconoEmail.png"
+										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/iconoEmail.png"
 									/>
 								</i>
 							</a>
@@ -66,7 +66,7 @@ export function Footer({text}) {
 								<i className="fa fa-github">
 									<img
 										className="face"
-										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/img/iconoWhatsapp.png"
+										src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/iconoWhatsapp.png"
 									/>
 								</i>
 							</a>

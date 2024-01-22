@@ -1,6 +1,15 @@
 import PropTypes from "prop-types";
 
-export function CardEnfoque({img, title, text, textBtn, link}) {
+export function CardEnfoque({
+	img,
+	title,
+	text,
+	textBtn,
+	link,
+	setSite,
+	scrollToReference,
+	site,
+}) {
 	return (
 		<>
 			<div className="clientes">
@@ -10,7 +19,15 @@ export function CardEnfoque({img, title, text, textBtn, link}) {
 				</h3>
 				<span className="clientes-text">{text}</span>
 				<a href={link} target="_blank" rel="noreferrer">
-					<button className="clientes-btn">{textBtn}</button>
+					<button
+						className="clientes-btn"
+						onClick={() => {
+							setSite(site);
+							scrollToReference("top");
+						}}
+					>
+						{textBtn}
+					</button>
 				</a>
 			</div>
 		</>
@@ -22,5 +39,8 @@ CardEnfoque.propTypes = {
 	title: PropTypes.string.isRequired,
 	text: PropTypes.string.isRequired,
 	textBtn: PropTypes.string.isRequired,
-	link: PropTypes.string.isRequired,
+	link: PropTypes.string,
+	setSite: PropTypes.func,
+	site: PropTypes.string,
+	scrollToReference: PropTypes.func,
 };

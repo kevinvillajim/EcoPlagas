@@ -55,7 +55,7 @@ function App() {
 			<div className="border-total-container">
 				<main>
 					{site == "home" ? (
-						<Home />
+						<Home setSite={setSite} scrollToReference={scrollToReference} />
 					) : site == "serviciosResidenciales" ? (
 						<ServiciosResidenciales />
 					) : site == "serviciosComerciales" ? (

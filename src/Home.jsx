@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
+import PropTypes from "prop-types";
 import {Services} from "./components/Services";
 import {CardEnfoque} from "./components/CardEnfoque";
 import {WhyCard} from "./components/WhyCard";
@@ -10,7 +11,7 @@ import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 //-----
 import "./App.css";
 
-function Home() {
+function Home({setSite, scrollToReference}) {
 	return (
 		<>
 			<div id="carouselExampleDark" className="carousel carousel-dark slide">
@@ -364,16 +365,11 @@ function Home() {
 					<CardEnfoque
 						img="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/clientes1.jpg"
 						title="Residenciales"
-						text="En un mundo donde la tranquilidad de tu hogar es más valiosa
-                  que nunca, aquella tranquilidad es transformada en miedo, asco
-                  y mas importante, un foco de enfermedades que pueden afectar a
-                  ti y los tuyos. Durante 2 años hemos sido guardianes
-                  silenciosos de hogares como el tuyo, protegiéndolos de las
-                  plagas de manera segura y efectiva. Nuestros productos son más
-                  que simples soluciones; son promesas de seguridad para tu
-                  familia, mascotas y para el medio ambiente que todos
-                  compartimos."
+						text="En un mundo donde la tranquilidad de tu hogar es más valiosa que nunca, aquella tranquilidad es transformada en miedo, asco y más importante, un foco de enfermedades que pueden afectar a ti y los tuyos. Durante 2 años hemos sido guardianes silenciosos de hogares como el tuyo, protegiéndolos de las plagas de manera segura y efectiva. Nuestros productos son más que simples soluciones; son promesas de seguridad para tu familia, mascotas y para el medio ambiente que todos compartimos."
 						textBtn="Ver mas"
+						setSite={setSite}
+						scrollToReference={scrollToReference}
+						site={"serviciosResidenciales"}
 					/>
 					<CardEnfoque
 						img="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/clientes2.jpg"
@@ -388,6 +384,9 @@ function Home() {
                   seguridad para tus empleados, clientes y tu negocio en
                   general."
 						textBtn="Ver mas"
+						setSite={setSite}
+						scrollToReference={scrollToReference}
+						site={"serviciosComerciales"}
 					/>
 				</div>
 			</div>
@@ -415,3 +414,8 @@ function Home() {
 }
 
 export default Home;
+
+Home.propTypes = {
+	setSite: PropTypes.funct,
+	scrollToReference: PropTypes.func,
+};
