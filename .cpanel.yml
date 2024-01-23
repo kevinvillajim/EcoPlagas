@@ -4,10 +4,10 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
     - export DEPLOYPATH=/home/usuario/public_html
-    - /bin/cp -R $APP_BASE/build $DEPLOYPATH
     - /bin/cp $APP_BASE/.htaccess $DEPLOYPATH
     - /bin/cp $APP_BASE/favicon.ico $DEPLOYPATH
     - /bin/cp $APP_BASE/index.html $DEPLOYPATH
     - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R $APP_BASE/dist $DEPLOYPATH
 
   version: 2
