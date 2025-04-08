@@ -195,7 +195,7 @@ function Home({setSite, scrollToReference}) {
 						<div className="text-center mb-4">
 							<img
 								className="img-fluid eco-icons-img"
-								src="/img/iconoMascotas.svg"
+								src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/iconoMascotas.svg"
 								alt="Icono salud personas y mascotas"
 							/>
 						</div>
@@ -207,7 +207,7 @@ function Home({setSite, scrollToReference}) {
 						<div className="text-center mb-4">
 							<img
 								className="img-fluid eco-icons-img"
-								src="/img/iconoPlantas.svg"
+								src="https://raw.githubusercontent.com/kevinvillajim/EcoPlagas/main/img/iconoPlantas.svg"
 								alt="Icono respeto al medio ambiente"
 							/>
 						</div>
