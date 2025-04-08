@@ -10,7 +10,7 @@ export function Footer({text}) {
 				/>
 				<footer className="footer-distributed">
 					<div className="footer-left">
-						<p className="footer-links">{text}</p>
+						<div className="footer-links">{text}</div>
 						<p id="footer-company" className="footer-company-name">
 							Eco Plagas © 2023
 						</p>
@@ -29,11 +29,9 @@ export function Footer({text}) {
 						</div>
 						<div>
 							<i className="fa fa-envelope"></i>
-							<p>
-								<a id="contact-mail" href="mailto:info@eco-plagas.net">
-									support@ecoplagas-ec.com
-								</a>
-							</p>
+							<a id="contact-mail" href="mailto:info@eco-plagas.net">
+								<p>support@ecoplagas-ec.com</p>
+							</a>
 						</div>
 					</div>
 					<div className="footer-right">

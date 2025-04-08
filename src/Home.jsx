@@ -195,7 +195,7 @@ function Home({setSite, scrollToReference}) {
 						<div className="text-center mb-4">
 							<img
 								className="img-fluid eco-icons-img"
-								src="https://www.americanpest.es/wp-content/uploads/2022/10/icono-salud-personas-y-mascotas.svg"
+								src="/img/iconoMascotas.svg"
 								alt="Icono salud personas y mascotas"
 							/>
 						</div>
@@ -207,7 +207,7 @@ function Home({setSite, scrollToReference}) {
 						<div className="text-center mb-4">
 							<img
 								className="img-fluid eco-icons-img"
-								src="https://www.americanpest.es/wp-content/uploads/2022/10/icono-respeto-medio-ambiente.svg"
+								src="/img/iconoPlantas.svg"
 								alt="Icono respeto al medio ambiente"
 							/>
 						</div>
@@ -284,13 +284,9 @@ function Home({setSite, scrollToReference}) {
 							/>
 						}
 						title="Beneficios de ECO PLAGAS"
-						text={[
-							"1)  Obtienes el control de la plaga desde la primera aplicación.",
-							<br key="1" />,
-							"2)  Productos totalmente amigables con el ambiente.",
-							<br key="2" />,
-							"3)  Despues del servicio obtendrás un certificado de control de plagas avalada por la agencia de regulacion de control sanitario para permiso de funcionamiento y Control o inspecciones sanitarias de cualquier organismo de control.",
-						]}
+						text={`1)  Obtienes el control de la plaga desde la primera aplicación. 
+         2)  Productos totalmente amigables con el ambiente.
+         3)  Después del servicio obtendrás un certificado de control de plagas avalada por la agencia de regulación de control sanitario para permiso de funcionamiento y Control o inspecciones sanitarias de cualquier organismo de control.`}
 					/>
 				</div>
 				<div id="why-card-container">
@@ -416,6 +412,6 @@ function Home({setSite, scrollToReference}) {
 export default Home;
 
 Home.propTypes = {
-	setSite: PropTypes.funct,
+	setSite: PropTypes.func,
 	scrollToReference: PropTypes.func,
 };
